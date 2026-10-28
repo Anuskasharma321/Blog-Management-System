@@ -1,4 +1,4 @@
-import { } from 'react'
+import {} from 'react'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import Home from './pages/blog/Home'
 import Register from './pages/Auth/Register'
@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/addblog" element={<AddBlog />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/AddBlog" element={<AddBlog />} />
       </Routes>
     </BrowserRouter>
     </>
