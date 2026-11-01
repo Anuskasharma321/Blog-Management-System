@@ -1,12 +1,22 @@
 import React from 'react'
+import Navbar from '../../components/navbar/Navbar'
+import Layout from '../../components/Layout/Layout'
+import Card from './Components/Card/Card'
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-blue-600 flex items-center justify-center">
-      <h1 className="text-white text-4xl font-bold">
-        Welcome to Blog Management System
-      </h1>
-    </div>
+    <Layout>
+      <div className='flex justify-center items-center flex-wrap gap-7 mt-9 space-x-3 mb-5'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        
+        </div>
+
+
+
+    </Layout>
   )
 }
 
