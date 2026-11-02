@@ -5,6 +5,7 @@ import Home from './pages/blog/Home'
 import Register from './pages/Auth/Register'
 import Login from './pages/Auth/Login'
 import AddBlog from './pages/blog/AddBlog'
+import EditBlog from './pages/blog/EditBlog'
 
 import './App.css'
 
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/addblog" element={<AddBlog />} />
+        <Route path="/blogs/add" element={<AddBlog />} />
+        <Route path="/blogs/edit" element={<EditBlog />} />
       </Routes>
     </BrowserRouter>
   )
