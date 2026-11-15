@@ -5,19 +5,22 @@ import Card from './Components/Card/Card'
 
 const Home = () => {
   return (
-    <Layout>
-      <div className='flex justify-center items-center flex-wrap gap-7 mt-9 space-x-3 mb-5'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        
-        </div>
+   <Layout>
+  <div className='flex flex-wrap justify-center space-x-5 mt-6'>
+    {
+      blogs.length > 0 && blogs.map((blog)=>{
+        console.log(blog)
+        return (
+          <Card blog={blog} />
+        )
+      })
+    }
+  
 
-
-
-    </Layout>
+  </div>
+   </Layout>
   )
 }
+
 
 export default Home
